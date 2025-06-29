@@ -153,7 +153,19 @@
       document.querySelectorAll('.section').forEach(sec => sec.classList.add('hidden'));
       document.getElementById(id).classList.remove('hidden');
       window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      // Remove classe 'active' de todos os links
+      document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+
+      // Adiciona 'active' ao link clicado
+      const navLinks = document.querySelectorAll('nav a');
+      navLinks.forEach(link => {
+        if (link.getAttribute('onclick')?.includes(id)) {
+          link.classList.add('active');
+        }
+      });
     }
+
 
     function enviarParaWhatsApp(event) {
       event.preventDefault();
