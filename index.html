@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Raul Cézar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="showSection('home')">Início</a></li>
+        <li><a href="#" onclick="showSection('portfolio')">Portfólio</a></li>
+        <li><a href="#" onclick="showSection('contato')">Contato</a></li>
+        <li><a href="https://github.com/devraulczr/Portifolio" target="_blank">Este Projeto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <!-- INÍCIO -->
+  <main id="home" class="section">
+    <section class="perfil-grid">
+      <div class="col-esquerda">
+        <img src="./src/perfil.jpg" alt="Raul Cézar" class="foto-perfil" />
+        <p>Olá, é um prazer recebê-lo em minha página! Aqui estão alguns detalhes sobre mim e minha carreira.</p>
+        <p>Para que possa me conhecer um pouco melhor, fiz a tabela abaixo que contém algumas informações a mais!</p>
+
+        <table class="info-tabela">
+          <tr><th>Nome</th><td>Raul Cézar</td></tr>
+          <tr><th>Idade</th><td>16</td></tr>
+          <tr><th>Nacionalidade</th><td>Brasileiro</td></tr>
+          <tr><th>Localização</th><td>Minas Gerais, Brasil</td></tr>
+          <tr><th>Status</th><td>Solteiro</td></tr>
+          <tr><th>Carreira Profissional</th><td>Programador backend</td></tr>
+        </table>
+        <!-- INÍCIO
+        <h2>📄 Licenças e certificados</h2>
+        <ul class="certificados">
+          <li><b>UX Strategy</b> — Alura<br><small>Credential: 770d5534-...eba</small> ✅ Recebido</li>
+          <li><b>Design de Serviços</b> — Alura<br><small>Credential: 1845cfbd-...3cf</small> ✅ Recebido</li>
+          <li><b>DNA: Líder de Equipe</b> — Desafio Nacional Acadêmico<br><small>Junho de 2024</small> ✅ Recebido</li>
+          <li><b>Gestão de Pessoas</b> — CIEE<br><small>Credential: 66b0abbc-...03ae</small> ✅ Recebido</li>
+          <li><b>Ferramentas de Escritório</b> — UNICENTRO<br><small>Credential: b9528f1</small> ✅ Recebido</li>
+        </ul>
+         -->
+      </div>
+
+      <div class="col-direita">
+        <h3>Conhecimentos</h3>
+        <ul class="conhecimentos">
+          <li>Inglês intermediário</li>
+          <li>Comunicação</li>
+          <li>Manutenção básica em TI</li>
+          <li>Estruturação HTML & CSS</li>
+          <li>Lógica de Programação</li>
+          <li>Desenvolvimento Back-end</li>
+          <li>Desenvolvimento Front-end</li>
+          <li>Uso de linguagens como:
+            <ul>
+              <li>Python</li>
+              <li>PHP</li>
+              <li>JS</li>
+              <li>C#</li>
+              <li>Lua</li>
+              <li>Css</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- PORTFÓLIO -->
+  <main id="portfolio" class="section hidden">
+    <h2>Bem-vindo(a) às minhas criações!</h2>
+    <p class="tags">Tags: Desenvolvimento Web – Full Stack.</p>
+    <div class="projetos">
+      <div class="projeto">
+        <img src="./src/codextv.png" alt="Codex Company" />
+        <h3>Codex Company TV</h3>
+        <div class="tags"><span class="html">HTML</span> <span class="css">CSS</span> <span class="js">JS</span> <span class="fullstack">Full Stack</span> </div>
+        <p>Site criado como parte de uma atividade prática técnica. Inclui login, animes, usuarios, db.</p>
+        <p class="info">Trabalho desenvolvido inteiramente por Raul</p>
+        <div class="botoes">
+          <a href="http://valen.gratian.pro:3018/main">Visitar site</a>
+          <a href="#" class="website disabled-link">Projeto (Não disponivél)</a>
+        </div>
+      </div>
+      <div class="projeto">
+        <img src="./src/keyauthapi.png" alt="Api Key Auth" />
+        <h3>Api Key Auth</h3>
+        <div class="tags"><span class="js">JS</span> <span class="backend">Backend</span> </div>
+        <p>Api desenvolvida para facilitar seu controle de usuarios e suas licensas.</p>
+        <p class="info">Trabalho desenvolvido inteiramente por Raul</p>
+        <div class="botoes">
+          <a href="#" class="website disabled-link">Visitar site (Não disponível)</a>
+          <a href="https://github.com/devraulczr/authkey_api">Projeto</a>
+        </div>
+      </div>
+      <div class="projeto">
+        <img src="./src/cepapi.png" alt="Cep Api" />
+        <h3>Api Cep</h3>
+        <div class="tags"><span class="php">PHP</span> <span class="backend">Backend</span> </div>
+        <p>Api desenvolvida para facilitar a vida de integrações com enrereços e localidades.</p>
+        <p class="info">Trabalho desenvolvido inteiramente por Raul</p>
+        <div class="botoes">
+          <a href="#" class="website disabled-link">Visitar site (Não disponível)</a>
+          <a href="https://github.com/devraulczr/cep_api">Projeto</a>
+        </div>
+      </div>
+      <div class="projeto">
+        <img src="./src/ticketapi.png" alt="Ticket Api" />
+        <h3>Api Ticket</h3>
+        <div class="tags"><span class="php">PHP</span> <span class="backend">Backend</span> </div>
+        <p>Api desenvolvida para facilitar sua vida com gerenciamento de tickets.</p>
+        <p class="info">Trabalho desenvolvido inteiramente por Raul</p>
+        <div class="botoes">
+          <a href="#" class="website disabled-link">Visitar site (Não disponível)</a>
+          <a href="https://github.com/devraulczr/ticket_api">Projeto</a>
+        </div>
+      </div>
+      <div class="projeto">
+        <img src="./src/loginapi.png" alt="Login Api" />
+        <h3>Api Login</h3>
+        <div class="tags"><span class="php">PHP</span> <span class="backend">Backend</span> </div>
+        <p>Api desenvolvida o controle de usuarios com opção de recuperação de senhas.</p>
+        <p class="info">Trabalho desenvolvido inteiramente por Raul</p>
+        <div class="botoes">
+          <a href="#" class="website disabled-link">Visitar site (Não disponível)</a>
+          <a href="https://github.com/devraulczr/php_login">Projeto</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- CONTATO -->
+  <main id="contato" class="section hidden">
+    <h2>Entre em Contato</h2>
+    <p>📧 Email: exemplo@email.com</p>
+    <p>🔗 LinkedIn: <a href="https://linkedin.com/in/seu-perfil" target="_blank">linkedin.com/in/seu-perfil</a></p>
+    <p>📱 WhatsApp: <a href="https://wa.me/5537999882259" target="_blank">(37) 99988-2259</a></p>
+
+    <h3>Envie uma mensagem direta:</h3>
+    <form id="whatsForm" onsubmit="enviarParaWhatsApp(event)">
+      <label>Seu nome:</label>
+      <input type="text" id="nome" placeholder="Digite seu nome" required />
+      
+      <label>Mensagem:</label>
+      <textarea id="mensagem" placeholder="Escreva sua mensagem" required></textarea>
+
+      <button type="submit">Enviar para WhatsApp</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© Raul Cézar - Todos os direitos reservados</p>
+  </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(sec => sec.classList.add('hidden'));
+      document.getElementById(id).classList.remove('hidden');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function enviarParaWhatsApp(event) {
+      event.preventDefault();
+      const nome = document.getElementById("nome").value.trim();
+      const mensagem = document.getElementById("mensagem").value.trim();
+
+      if (!nome || !mensagem) return;
+
+      const texto = `Olá, me chamo ${nome} e gostaria de falar o seguinte: ${mensagem}`;
+      const url = `https://wa.me/5537999882259?text=${encodeURIComponent(texto)}`;
+
+      window.open(url, "_blank");
+    }
+  </script>
+</body>
+</html>
