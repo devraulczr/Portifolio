@@ -51,6 +51,12 @@ nav a:hover {
   color: var(--accent);
 }
 
+nav a {
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s;
+}
+
 nav a::after {
   content: '';
   position: absolute;
